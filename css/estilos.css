@@ -1,128 +1,171 @@
 body {
-	margin: 10px;
-  background-color: #02010a;
+	text-align: center;
+	font-size: 1em;
 	font-family: Dancing Script;
+	background-color: #02010a;
 }
-
-#banner {
-	width: 900px;
-  background-color: #5b7989;
-  color: white;
-  border-radius: 10px 10px 0px 0px;
-  -moz-borderradius:10px 10px 0px 0px;
-  -webkit-border-radius:10px 10px 0px 0px;
-}
-
-h1{
+.titulo {
 	text-align: left;
-  text-shadow: 1px 2px 3px #02010a;
+	text-shadow: 1px 2px 3px #02010a;
+	padding: 0px 15px;
+	flex-grow: 1;
 }
-
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
+		height: 100%;
 }
 
 li {
-    float: right;;;
+    float: left;
+		display: block;
+		margin: 0px 5px;
+		padding: 25px 0px;
+		height: 100%;
 }
 
 li a {
     display: block;
-    padding: 20px;
+    padding: 5px;
+		color: white;
+		font-size: 25px;
 }
+.active a{text-decoration:none;}
 
-.contenido {
+.contenedor {
 	margin: 0 auto;
-  width: 100%;
+  width: 900px;
 	display: flex;
 	flex-flow: row wrap;
 }
-
-.contenido div {
+.contenedor div {
   box-sizing: border-box;
 	min-width: 50px;
-	width: 900px;
-	float: center;
-	display:block;
 }
 .bloque1 {
   color: #ddd;
-  background-color: #82c3a6;
-	min-height: 200px;
-	width: 100%;
+  background-color: #5b7989;
+	min-height: 80px;
+	width: 60%;
+	border-radius: 10px 0px 0px 0px;
+	-moz-borderradius:10px 0px 0px 0px;
+	-webkit-border-radius:10px 0px 0px 0px;
 }
 .bloque2 {
   color: #333;
-  background-color: #d5c75f;
-	min-height: 600px;
-	width: 50%;
+  background-color: #5b7989;
+	min-height: 80px;
+	width: 40%;
+	border-radius: 0px 10px 0px 0px;
+	-moz-borderradius:0px 10px 0px 0px;
+	-webkit-border-radius:0px 10px 0px 0px;
 }
 .bloque3 {
   color: #333;
-  background-color: red;
-		min-height: 600px;
+  background-color: #82c3a6;
+	min-height: 400px;
+	width: 100%;
+	padding: 10px;
+}
+.bloque4 {
+  color: #333;
+  background-color: #d5c75f;
+	min-height: 200px;
 	width: 50%;
+	padding: 10px;
 }
-@media all and (max-width: 900px) and (min-width:700px) {
-	.contenido{
-		width: 100%;
-	}
-	.bloque1 {
-		width: 100%;
-	}
-	.bloque2 {
-		width: 50%;
-		min-height: 400px;
-	}
-	.bloque3{
-		width: 50%;
-		min-height: 400px;
-	}
+.bloque5 {
+  color: #333;
+  background-color: #d5c75f;
+	min-height: 200px;
+	width: 50%;
+	padding: 10px;
 }
-@media all and (max-width: 700px) and (min-width:480px) {
-	.contenido{
-		width: 100%;
-	}
-	.bloque1 {
-		width: 100%;
-
-	}
-	.bloque2 {
-		width: 100%;
-		min-height: 400px;
-	}
-	.bloque3{
-		width: 100%;
-		min-height: 400px;
-	}
+.bloque6 {
+  color: #333;
+  background-color: #C6d5c5;
+		min-height: 100px;
+	width: 25%;
+	border-radius: 0px 0px 0px 10px;
+	-moz-borderradius:0px 0px 0px 10px;
+	-webkit-border-radius:0px 0px 0px 10px;
 }
-@media all and (max-width: 480px) {
+.bloque7 {
+  color: #333;
+  background-color: #C6d5c5;
+		min-height: 100px;
+	width: 25%;
+}
+.bloque8 {
+  color: #333;
+  background-color: #C6d5c5;
+		min-height: 100px;
+	width: 25%;
+}
+.bloque9 {
+  color: #333;
+  background-color: #C6d5c5;
+		min-height: 100px;
+	width: 25%;
+	border-radius: 0px 0px 10px 0px;
+	-moz-borderradius:0px 0px 10px 0px;
+	-webkit-border-radius:0px 0px 10px 0px;
+}
+@media all and (max-width: 900px) {
 	.contenedor{
 		width: 100%;
 	}
 	.bloque1 {
 		width: 100%;
+		border-radius: 10px 10px 0px 0px;
+		-moz-borderradius:10px 10px 0px 0px;
+		-webkit-border-radius:10px 10px 0px 0px;
 	}
 	.bloque2 {
 		width: 100%;
-		min-height: 400px;
+		min-height: 100px;
+		border-radius: 0px;
+		-moz-borderradius:0px;
+		-webkit-border-radius:0px;
 	}
 	.bloque3{
 		width: 100%;
-		min-height: 400px;
+		min-height: 200px;
 	}
-}
-
-#footer {
-	padding: 10px;
-
-  background-color: #C6d5c5;
-  color: white;
-  text-align: left;
-  border-radius: 0px 0px 10px 10px;
-  -moz-borderradius:0px 0px 10px 10px;
-  -webkit-border-radius:0px 0px 10px 10px;
+	.bloque4{
+		width: 100%;
+		min-height: 200px;
+	}
+	.bloque5{
+		width: 100%;
+		min-height: 200px;
+	}
+	.bloque6{
+		width: 100%;
+		min-height: 100px;
+		border-radius: 0px;
+		-moz-borderradius:0px;
+		-webkit-border-radius:0px;
+	}
+	.bloque7{
+		width: 100%;
+		min-height: 100px;
+	}
+	.bloque8{
+		width: 100%;
+		min-height: 100px;
+	}
+	.bloque9{
+		width: 100%;
+		min-height: 100px;
+		border-radius: 0px 0px 10px 10px;
+		-moz-borderradius:0px 0px 10px 10px;
+		-webkit-border-radius:0px 0px 10px 10px;
+	}
+	.titulo{
+		text-align: center;
+	  text-shadow: 1px 2px 3px #02010a;
+		padding: 10px;
+	}
 }
